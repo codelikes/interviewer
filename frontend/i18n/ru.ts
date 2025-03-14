@@ -1,0 +1,127 @@
+// Russian translations
+const ru = {
+  common: {
+    appName: "Interviewer",
+    footer: "Interviewer - Платформа для подготовки к интервью",
+    generating: "Генерация...",
+    error: "Ошибка!",
+    loading: "Загрузка..."
+  },
+  nav: {
+    home: "Главная",
+    createQuestions: "Создать вопросы",
+    tags: "Теги",
+    interviews: "Интервью",
+    reports: "Отчеты"
+  },
+  home: {
+    title: "Платформа для подготовки к интервью",
+    subtitle: "Практикуйте технические интервью с помощью ИИ",
+    startButton: "Начать подготовку"
+  },
+  questions: {
+    createTitle: "Создать вопросы",
+    prompt: "Введите описание для генерации вопросов",
+    generateButton: "Сгенерировать вопросы",
+    questionText: "Текст вопроса",
+    difficultyLevel: "Уровень сложности",
+    tags: "Теги",
+    saveButton: "Сохранить вопросы",
+    saveError: "Ошибка при сохранении вопросов",
+    generateError: "Произошла ошибка при генерации вопросов",
+    description: "Введите текст с терминами или примерами кода, на основе которого будут созданы вопросы для интервью.",
+    promptPlaceholder: "Например: Python генераторы, декораторы, контекстные менеджеры",
+    results: "Результаты генерации",
+    generated: "Сгенерировано {{count}} вопросов",
+    createNew: "Создать новые вопросы",
+    questionNumber: "Вопрос {{number}}:"
+  },
+  interviews: {
+    createTitle: "Создать интервью",
+    prompt: "Введите описание для интервью",
+    generateButton: "Сгенерировать интервью",
+    title: "Название",
+    description: "Описание",
+    duration: "Длительность",
+    minutes: "минут",
+    difficultyLevel: "Уровень сложности",
+    questions: "Вопросы",
+    startButton: "Начать интервью",
+    submitButton: "Отправить ответы",
+    byTag: "по тегу",
+    promptHelp: "Опишите, что вы хотите от интервью, например: \"Хочу пройти собеседование по Python на уровне Middle, на 15 минут\".",
+    promptPlaceholder: "Опишите, какое интервью вы хотите...",
+    promptRequired: "Пожалуйста, введите запрос",
+    generateError: "Произошла ошибка при генерации интервью",
+    loadError: "Не удалось загрузить интервью",
+    notFound: "Интервью не найдено",
+    completed: "Интервью завершено!",
+    answersSubmitted: "Ваши ответы успешно отправлены. Вы можете просмотреть результаты оценки в отчете.",
+    backToList: "К списку интервью",
+    question: "Вопрос",
+    questionNumber: "Вопрос {{number}} из {{total}}",
+    progress: "Прогресс",
+    yourAnswer: "Ваш ответ",
+    answerPlaceholder: "Введите ваш ответ...",
+    prevQuestion: "Предыдущий вопрос",
+    nextQuestion: "Следующий вопрос",
+    finishInterview: "Завершить интервью",
+    submitting: "Отправка...",
+    submitError: "Произошла ошибка при отправке ответов",
+    availableInterviews: "Доступные интервью",
+    createNew: "Создать новое интервью",
+    noInterviews: "Пока нет доступных интервью",
+    createInterviewPrompt: "Чтобы начать, создайте новое интервью на странице тегов",
+    questionsCount: "вопросов",
+    createdAt: "Создано"
+  },
+  reports: {
+    title: "Отчеты по интервью",
+    score: "Оценка",
+    level: "Достигнутый уровень",
+    feedback: "Отзыв",
+    noReports: "Пока нет доступных отчетов",
+    howToGetReport: "Чтобы получить отчет, пройдите интервью на странице интервью",
+    startNewInterview: "Пройти новое интервью",
+    reportFrom: "Отчет от",
+    assessment: "Оценка",
+    viewReport: "Просмотреть отчет",
+    loadError: "Ошибка при загрузке отчетов",
+    notFound: "Отчет не найден",
+    generalInfo: "Общая информация",
+    completionDate: "Дата прохождения",
+    answerResults: "Результаты ответов",
+    estimatedScore: "Примерная оценка",
+    yourAnswer: "Ваш ответ",
+    correctAnswer: "Правильный ответ",
+    answerNotFound: "Ответ не найден",
+    correctAnswerNotAvailable: "Правильный ответ недоступен",
+    evaluation: "Оценка и комментарии",
+    print: "Печать отчета"
+  },
+  tags: {
+    title: "Теги вопросов",
+    name: "Название",
+    description: "Описание",
+    createTitle: "Создать тег",
+    saveButton: "Сохранить тег",
+    noTags: "Теги еще не созданы. Создайте вопросы, чтобы добавить теги.",
+    loadError: "Ошибка при загрузке тегов",
+    notFound: "Тег не найден",
+    questionsNotFound: "Вопросы с этим тегом не найдены."
+  },
+  language: {
+    select: "Язык",
+    en: "Английский",
+    ru: "Русский"
+  },
+  theme: {
+    select: "Тема",
+    light: "Светлая тема",
+    dark: "Темная тема",
+    system: "Системная",
+    toggle: "Переключить тему"
+  }
+};
+
+export default ru; 

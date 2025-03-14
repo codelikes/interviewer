@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Основные стили для поддержки темной темы */
+@layer base {
+  .dark {
+    --background-primary: theme('colors.gray.900');
+    --background-secondary: theme('colors.gray.800');
+    --text-primary: theme('colors.gray.100');
+    --text-secondary: theme('colors.gray.300');
+    --border: theme('colors.gray.700');
+  }
+  
+  body {
+    @apply bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors;
+  }
+}
+
+@layer components {
+  /* Стили для карточек и блоков */
+  .card {
+    @apply bg-white dark:bg-gray-800 shadow rounded-lg transition-colors;
+  }
+  
+  /* Стили для кнопок */
+  .btn-primary {
+    @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 focus:ring-offset-gray-900 transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center px-3 py-1.5 border border-gray-300 dark:border-gray-600 text-xs font-medium rounded-md text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 focus:ring-offset-gray-900 transition-colors;
+  }
+  
+  /* Стили для формы */
+  .form-input {
+    @apply shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-md transition-colors;
+  }
+  
+  .form-select {
+    @apply block w-full pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md transition-colors;
+  }
+  
+  .form-checkbox {
+    @apply h-4 w-4 text-indigo-600 dark:text-indigo-500 focus:ring-indigo-500 border-gray-300 dark:border-gray-600 rounded transition-colors;
+  }
+  
+  /* Стили для бейджей */
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium transition-colors;
+  }
+  
+  .badge-green {
+    @apply bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200;
+  }
+  
+  .badge-yellow {
+    @apply bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200;
+  }
+  
+  .badge-red {
+    @apply bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200;
+  }
+  
+  .badge-blue {
+    @apply bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200;
+  }
+  
+  .badge-gray {
+    @apply bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200;
+  }
+} 

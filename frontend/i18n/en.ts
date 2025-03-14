@@ -1,0 +1,127 @@
+// English translations
+const en = {
+  common: {
+    appName: "Interviewer",
+    footer: "Interviewer - Platform for interview preparation",
+    generating: "Generating...",
+    error: "Error!",
+    loading: "Loading..."
+  },
+  nav: {
+    home: "Home",
+    createQuestions: "Create Questions",
+    tags: "Tags",
+    interviews: "Interviews",
+    reports: "Reports"
+  },
+  home: {
+    title: "Interview Preparation Platform",
+    subtitle: "Practice technical interviews with AI assistance",
+    startButton: "Start Preparation"
+  },
+  questions: {
+    createTitle: "Create Questions",
+    prompt: "Enter a description for generating questions",
+    generateButton: "Generate Questions",
+    questionText: "Question Text",
+    difficultyLevel: "Difficulty Level",
+    tags: "Tags",
+    saveButton: "Save Questions",
+    saveError: "Failed to save questions",
+    generateError: "An error occurred while generating questions",
+    description: "Enter text with terms or code examples to create interview questions.",
+    promptPlaceholder: "For example: Python generators, decorators, context managers",
+    results: "Generation Results",
+    generated: "Generated {{count}} questions",
+    createNew: "Create New Questions",
+    questionNumber: "Question {{number}}:"
+  },
+  interviews: {
+    createTitle: "Create Interview",
+    prompt: "Enter a description for the interview",
+    generateButton: "Generate Interview",
+    title: "Title",
+    description: "Description",
+    duration: "Duration",
+    minutes: "minutes",
+    difficultyLevel: "Difficulty Level",
+    questions: "Questions",
+    startButton: "Start Interview",
+    submitButton: "Submit Answers",
+    byTag: "by tag",
+    promptHelp: "Describe what kind of interview you want, for example: \"I want to have a Python interview at Middle level, for 15 minutes\".",
+    promptPlaceholder: "Describe what interview you want...",
+    promptRequired: "Please enter a prompt",
+    generateError: "An error occurred while generating the interview",
+    loadError: "Failed to load interview",
+    notFound: "Interview not found",
+    completed: "Interview completed!",
+    answersSubmitted: "Your answers have been successfully submitted. You can view the assessment results in the report.",
+    backToList: "Back to interviews",
+    question: "Question",
+    questionNumber: "Question {{number}} of {{total}}",
+    progress: "Progress",
+    yourAnswer: "Your answer",
+    answerPlaceholder: "Enter your answer...",
+    prevQuestion: "Previous question",
+    nextQuestion: "Next question",
+    finishInterview: "Finish interview",
+    submitting: "Submitting...",
+    submitError: "An error occurred while submitting answers",
+    availableInterviews: "Available Interviews",
+    createNew: "Create New Interview",
+    noInterviews: "No interviews available yet",
+    createInterviewPrompt: "To get started, create a new interview on the tags page",
+    questionsCount: "questions",
+    createdAt: "Created"
+  },
+  reports: {
+    title: "Interview Reports",
+    score: "Score",
+    level: "Achieved Level",
+    feedback: "Feedback",
+    noReports: "No reports available yet",
+    howToGetReport: "To get a report, complete an interview on the interviews page",
+    startNewInterview: "Start New Interview",
+    reportFrom: "Report from",
+    assessment: "Assessment",
+    viewReport: "View Report",
+    loadError: "Failed to load reports",
+    notFound: "Report not found",
+    generalInfo: "General Information",
+    completionDate: "Completion Date",
+    answerResults: "Answer Results",
+    estimatedScore: "Estimated Score",
+    yourAnswer: "Your Answer",
+    correctAnswer: "Correct Answer",
+    answerNotFound: "Answer not found",
+    correctAnswerNotAvailable: "Correct answer not available",
+    evaluation: "Evaluation and Comments",
+    print: "Print Report"
+  },
+  tags: {
+    title: "Question Tags",
+    name: "Name",
+    description: "Description",
+    createTitle: "Create Tag",
+    saveButton: "Save Tag",
+    noTags: "No tags available yet. Create questions to add tags.",
+    loadError: "Failed to load tags",
+    notFound: "Tag not found",
+    questionsNotFound: "No questions found with this tag."
+  },
+  language: {
+    select: "Language",
+    en: "English",
+    ru: "Russian"
+  },
+  theme: {
+    select: "Theme",
+    light: "Light Mode",
+    dark: "Dark Mode",
+    system: "System",
+    toggle: "Toggle theme"
+  }
+};
+
+export default en; 

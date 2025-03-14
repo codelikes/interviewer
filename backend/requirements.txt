@@ -1,0 +1,33 @@
+# API Framework
+fastapi==0.104.1
+uvicorn==0.24.0
+
+# Data Validation
+pydantic>=2.8.0
+pydantic-settings>=2.0.3
+
+# Database
+sqlalchemy==2.0.23
+psycopg2-binary==2.9.9
+asyncpg==0.29.0
+pgvector>=0.3.6,<1.0.0
+alembic==1.12.1
+
+# AI and Language Models
+llama-index-core==0.12.22
+llama-index-embeddings-openai==0.3.1
+llama-index-llms-openai==0.3.20
+llama-index-readers-file==0.4.3
+llama-index-vector-stores-postgres==0.4.2
+llama-index-program-openai==0.3.1
+openai>=1.58.1,<2.0.0
+
+# Utilities
+python-dotenv==1.0.0
+python-multipart==0.0.6
+httpx==0.25.1
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-asyncio==0.21.1 

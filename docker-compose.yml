@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  # Frontend service (Next.js)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: interviewer-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    env_file:
+      - .env
+    depends_on:
+      - backend
+    networks:
+      - interviewer-network
+    restart: unless-stopped
+
+  # Backend service (FastAPI)
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: interviewer-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    env_file:
+      - .env
+    depends_on:
+      - db
+    networks:
+      - interviewer-network
+    restart: unless-stopped
+
+  # Database (PostgreSQL with pgvector)
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: interviewer-db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      - vectors.enable_index_size_check=off
+    env_file:
+      - .env
+    networks:
+      - interviewer-network
+    restart: unless-stopped
+
+networks:
+  interviewer-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    name: interviewer-postgres-data 
